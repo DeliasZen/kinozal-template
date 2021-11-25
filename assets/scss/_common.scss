@@ -19,3 +19,28 @@ a {
     color: $color-accent;
   }
 }
+
+h1 {
+  font-family: "PT Serif", serif;
+
+  @include xs-min {
+    margin: -9.99999999px 0 1em 0;
+    font-size: 3rem;
+  }
+  @include xs {
+    margin: 0 0 1em;
+    font-size: 2rem;
+  }
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid #f0ad4f;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
