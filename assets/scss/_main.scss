@@ -3,4 +3,51 @@
 
 .main {
   margin-bottom: $gap-xl;
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films {
+  &-row {
+    margin-right: -$gap-sm;
+    margin-left: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-title {
+    @include xs-min {
+      h1 {
+        margin: -9.99999999px 0 1em 0;
+        font-size: 3rem;
+      }
+    }
+    @include xs {
+      h1 {
+        margin: 0 0 1em;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &-item {
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+    margin-bottom: $gap;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      @include text-shortener;
+    }
+  }
 }
