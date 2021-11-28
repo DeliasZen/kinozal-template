@@ -11,7 +11,6 @@
       @include sm-min {
         border-radius: 4px;
       }
-
       @include sm {
         text-align: center;
       }
@@ -55,6 +54,7 @@
 
 .navbar-toggle {
   float: none;
+
   margin-right: 0;
 }
 
@@ -77,11 +77,13 @@
   }
 
   > .panel-heading {
-    color: $color-white;
-    background-color: $color-accent;
-    border: none;
-    font-size: 1.25rem;
     letter-spacing: 0.08em;
+
+    color: $color-white;
+    border: none;
+    background-color: $color-accent;
+
+    font-size: 1.25rem;
   }
 }
 

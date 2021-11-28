@@ -11,13 +11,13 @@
 @mixin block-shortener($fz: 1rem, $lh: 1.5, $h: 70px, $l: 3) {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
 
   height: $h;
 
   font-size: $fz;
   line-height: $fz * $lh;
 
-  -webkit-box-orient: vertical;
   -webkit-line-clamp: $l;
 }
 
@@ -44,4 +44,15 @@
   padding: 0;
 
   border: 0;
+}
+
+@mixin after-line {
+  position: absolute;
+
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+
+  content: "";
+
+  border-bottom: 3px solid $color-accent-light;
 }
