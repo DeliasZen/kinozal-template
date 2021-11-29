@@ -1,2 +1,36 @@
 @use "presets" as *;
 @use "mixins" as *;
+
+.film-info {
+  font-size: 1.2em;
+  &__well {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &__wrapper {
+    white-space: nowrap;
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+  &__badge {
+    font-size: 0.8em;
+  }
+}
+
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.well {
+  border-color: $color-gray;
+  background-color: $color-gray-light;
+}
+
+.film-comment-form {
+  &__button {
+    float: right;
+  }
+}
